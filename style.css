@@ -1,11 +1,14 @@
-button{
+body{
+    background-color: rgb(131, 131, 226);
+}
+input{
     border-radius: 1.5rem;
     box-sizing: border-box;
     color: black;
-background-color: white;
-font-weight: 600;
+    background-color: white;
+    font-weight: 600;
     font-size: 1.1rem;
-    border: none;
+    border:#1e293b;
     padding: 1rem 1.6rem;
     text-align: center;
     line-height: 1;
@@ -19,11 +22,39 @@ font-weight: 600;
     display: inline-block;
     font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
-button:hover{
-background-color: #1e293b;
+input:hover{
+background-color: rgb(69, 69, 240);
+border: 2px solid white;
 color: white;
 
+
 }
-button:focus{
+input:focus{
     background-color: red;
+}
+.opt{
+    position: absolute;
+    top:0px;
+    left:226px;
+    
+    
+}
+.submit1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+html
+{
+    width: 300px;  /* max: 800px */
+    height: 150px; /* max: 600px */
 }
