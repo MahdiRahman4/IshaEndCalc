@@ -34,4 +34,10 @@ console.log(sunrise);
  })
 }
 
- 
+document.getElementById('button').addEventListener('click', (event) => {
+    event.preventDefault();
+deg = document.getElementById("opt");
+const selectedValue = deg.value;
+
+console.log(selectedValue);
+});
