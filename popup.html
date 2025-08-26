@@ -7,30 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bannerbox"><div class="banner">
-        <h1>Islamic Midnight Calculator 🌙</h1>
-    </div></div>
-    
     <form id="lol">
-        <div class="submit1">
-            <input id="button" type="submit"  value= "Calculate the end of Isha" onclick="getLocation()"></input>
+        <div class="time">
+            <h2 id="time"></h2>
         </div>
+        <div class="submit1">
+            <input id="button" type="submit"  value= "Calculate the end of Isha" ></input>
+        </div>
+        
     <div class="opt">
         <select name="degrees" id="opt">
-            <option>Fajr: 12°</option>  
-            <option>Fajr: 15°</option>
-            <option>Fajr: 18°</option>
+            <option value="12">Fajr: 12°</option>  
+            <option selected="selected" value="15">Fajr: 15°</option>
+            <option value="18">Fajr: 18°</option>
         </select>
+        
     </div>
 
     </form>
     <footer>
         <div class="footerpt1"></div>
-    <a href="#">How Does It Work?</a>
     <a href="#">Support Me</a>
-    <a href="#">Contact Me</a>
     </div>
-    <br><a href="https://sunrise-sunset.org/api#limits">Powered by Sunset and Sunrrise API</a>
+    <br><a href="https://sunrise-sunset.org/api#limits">Powered by Sunset and Sunrise API</a>
 
 
 

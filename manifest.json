@@ -1,13 +1,13 @@
 {
     "manifest_version": 3,
-    "name":"Isha End Calculator",
-    "version": "1.0.0",
-    "description": "An extension made for calculating the end of the Isha prayer. Through APIs, it finds the users location and it finds the prayer times and does the necessary calculations",
+    "name":"Isha End Time",
+    "version": "1.0.1",
+    "description": "An extension made for calculating the end of the Isha prayer.",
     "icons": {
         "48" : "logo.png",
         "128": "logo.png"
     },
-   "permissions": ["geolocation", "storage"],
+   "permissions": ["geolocation"],
     "background": {
         "service_worker": "background.js"
     },
