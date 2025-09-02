@@ -45,8 +45,6 @@ chrome.alarms.onAlarm.addListener((alarm) => {
 
   if (alarm.name?.startsWith("isha-")) {
     showNotif("Isha is ending in 30 minutes");
-  } else if (alarm.name === "testIsha") {
-    showNotif("TEST", "This is a test notification");
-  }
+  } 
 });
 

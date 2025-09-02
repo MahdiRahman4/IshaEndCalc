@@ -170,23 +170,5 @@ function showMidnight(midnight,meridian){
         if (meridian === "AM" && midnightDate.getHours() === 12) {
             midnightDate.setHours(0);
         }
-        chrome.runtime?.sendMessage(
-            { type: "SCHEDULE_ISHA_ALERT", whenMs: midnightDate.getTime() },
-
-
-
-            (res) => console.log("Alarm scheduled:", res)
-          );
-    }
-    
-    function prayerAlert() {
-        if (!midnightDate) return;
-    
-        const now = new Date();
-        const nowMinutes = now.getHours() * 60 + now.getMinutes();
-        const prayerMinutes = midnightDate.getHours() * 60 + midnightDate.getMinutes();
-    
-        if (prayerMinutes - nowMinutes === 30) {
-            alert("Isha is ending in 30 minutes");
-        }
+       ;
     }
